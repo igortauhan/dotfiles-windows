@@ -1,12 +1,16 @@
 ## Dotfiles
 
+### Warning
+
+**Don't use my configs if you don't know what it does!** Use at your own risk.
+
 ### Dependencies
 
 - [Scoop](https://scoop.sh/)
 - [oh-my-posh](https://ohmyposh.dev/)
-- neovim `scoop install neovim`
 - git `winget install Git.Git`
 - python `scoop install python`
+- neovim `scoop install neovim` (Not required)
 
 ### Basic config
 
