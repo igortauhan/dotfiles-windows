@@ -8,6 +8,8 @@ gitconfig_file = os.path.join(
     os.getcwd(), os.path.join("config", ".gitconfig"))
 user_profile_file = os.path.join(
     os.getcwd(), os.path.join("config", "user_profile.ps1"))
+ideavim_file = os.path.join(
+    os.getcwd(), os.path.join("config", ".ideavimrc"))
 
 
 def create_directory(path):
@@ -34,6 +36,9 @@ def install():
 
     # Powershell Profile
     install_file(user_profile_file, powershell_folder)
+
+    # ideavimrc
+    install_file(ideavim_file, home)
 
 
 if __name__ == "__main__":
