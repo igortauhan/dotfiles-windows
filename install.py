@@ -4,8 +4,10 @@ import shutil
 home = os.path.expanduser("~") + "/"
 config_folder = home + ".config/"
 powershell_folder = config_folder + "powershell/"
-gitconfig_file = os.path.join(os.getcwd(), ".gitconfig")
-user_profile_file = os.path.join(os.getcwd(), "user_profile.ps1")
+gitconfig_file = os.path.join(
+    os.getcwd(), os.path.join("config", ".gitconfig"))
+user_profile_file = os.path.join(
+    os.getcwd(), os.path.join("config", "user_profile.ps1"))
 
 
 def create_directory(path):
